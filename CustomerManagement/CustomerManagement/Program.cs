@@ -30,7 +30,7 @@ namespace CustomerManagement
                 Console.WriteLine("4. Delete a customer");
                 Console.WriteLine("5. Exit");
 
-                int choice = int.Parse(Console.ReadLine());
+                int choice = Convert.ToInt16(Console.ReadLine());
 
                 switch (choice)
                 {
@@ -73,7 +73,7 @@ namespace CustomerManagement
             customer.Email = Console.ReadLine();
 
             Console.Write("Enter age: ");
-            customer.Age = int.Parse(Console.ReadLine());
+            customer.Age = Convert.ToInt16(Console.ReadLine());
 
             Console.Write("Enter phone number: ");
             customer.PhoneNumber = Console.ReadLine();
@@ -122,7 +122,7 @@ namespace CustomerManagement
                 customer.Email = Console.ReadLine();
 
                 Console.Write("Enter age: ");
-                customer.Age = int.Parse(Console.ReadLine());
+                customer.Age = Convert.ToInt16(Console.ReadLine());
 
                 Console.Write("Enter phone number: ");
                 customer.PhoneNumber = Console.ReadLine();
